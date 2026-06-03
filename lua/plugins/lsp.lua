@@ -24,6 +24,7 @@ local servers = {
             pyright = true,
             omnisharp = true,
             jdtls = true,
+            gopls = true, -- Go language server
             ruff = { manual_install = true },
             lua_ls = {
                 cmd = { "lua-language-server" },
@@ -83,6 +84,7 @@ local servers = {
       "cssls",
       "ts_ls",
       "pyright",
+      "gopls", -- Go language server
     }
 
     vim.list_extend(ensure_installed, servers_to_install)

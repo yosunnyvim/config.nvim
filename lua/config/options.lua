@@ -1,7 +1,7 @@
---Line numbers
+--Line numbers   
 vim.opt.nu = true
 vim.opt.relativenumber = true
-vim.opt.cursorline = true 
+vim.opt.cursorline = true
 
 --Tab setting & indentation
 vim.opt.tabstop = 2
@@ -31,9 +31,12 @@ vim.opt.updatetime = 50
 vim.g.netrw_browse_split = 0
 vim.g.netrw_banner = 0
 vim.g.netrw_winsize = 25
-
 --spliting
 vim.cmd("set splitright")
--- vim.cmd("set nosplitbelow")
+
+--vim.cmd("set nosplitbelow")
+vim.opt.splitbelow = true
+
 -- yank to clipboard
 vim.opt.clipboard = "unnamedplus"
+
