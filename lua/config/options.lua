@@ -40,3 +40,5 @@ vim.opt.splitbelow = true
 -- yank to clipboard
 vim.opt.clipboard = "unnamedplus"
 
+-- add 'virtulblock' to only the virtual block mode
+vim.opt.virtualedit = "block"
