@@ -40,5 +40,11 @@ vim.opt.splitbelow = true
 -- yank to clipboard
 vim.opt.clipboard = "unnamedplus"
 
--- add 'virtulblock' to only the virtual block mode
+--enable to highlight further on the virtual blcok mode
 vim.opt.virtualedit = "block"
+
+-- slpit the window down if you run the substitution command
+vim.opt.inccommand = "split"
+
+-- ignore case
+vim.opt.ignorecase = true 
