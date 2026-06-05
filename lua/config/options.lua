@@ -48,3 +48,7 @@ vim.opt.inccommand = "split"
 
 -- ignore case
 vim.opt.ignorecase = true 
+
+-- folding
+vim.opt.foldmethod = "manual"
+vim.opt.foldenable = true
