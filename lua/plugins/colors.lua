@@ -5,28 +5,21 @@ end
 
 return {
   {
-    "blazkowolf/gruber-darker.nvim",
+    "folke/tokyonight.nvim",
     lazy = false,
     priority = 1000,
     config = function()
-      require("gruber-darker").setup({
+      require("tokyonight").setup({
+        style = "night",        -- "storm" | "night" | "moon" | "day"
         bold = true,
-        invert = {
-          signs = false,
-          tabline = false,
-          visual = false,
-        },
-        italic = {
-          strings = false,
-          comments = true,
-          operators = false,
-          folds = true,
-        },
-        undercurl = true,
-        underline = true,
+        italic_comments = true,
+        italic_keywords = false,
+        italic_functions = false,
+        italic_variables = false,
+        transparent = true,     -- replaces your enable_transparency()
+        terminal_colors = true,
       })
-      vim.cmd.colorscheme("gruber-darker")
-      enable_transparency()
+      vim.cmd.colorscheme("tokyonight")
     end,
   },
   {
@@ -37,7 +30,7 @@ return {
     config = function()
       require("lualine").setup({
         options = {
-          theme = "auto",
+          theme = "tokyonight",  -- explicit instead of "auto"
         },
       })
     end,
