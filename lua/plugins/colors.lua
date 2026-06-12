@@ -16,7 +16,7 @@ return {
         italic_keywords = false,
         italic_functions = false,
         italic_variables = false,
-        transparent = true,     -- replaces your enable_transparency()
+        transparent = false,     -- replaces your enable_transparency()
         terminal_colors = true,
       })
       vim.cmd.colorscheme("tokyonight")

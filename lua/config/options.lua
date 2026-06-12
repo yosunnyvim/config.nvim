@@ -2,6 +2,7 @@
 vim.opt.nu = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
+vim.opt.winborder= "rounded"
 
 --Tab setting & indentation
 vim.opt.tabstop = 2
@@ -52,3 +53,5 @@ vim.opt.ignorecase = true
 -- folding
 vim.opt.foldmethod = "manual"
 vim.opt.foldenable = true
+-- add termguicolors to fix the backround problem
+vim.opt.termguicolors = true 
