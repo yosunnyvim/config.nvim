@@ -51,3 +51,14 @@ vim.opt.foldenable = true
 
 -- colors
 vim.opt.termguicolors = true
+-- remove warning
+vim.lsp.config("lua_ls", {
+    settings = {
+        Lua = {
+            workspace = {
+                library = vim.api.nvim_get_runtime_file("", true)
+            }
+        }
+    }
+})
+
